@@ -1,7 +1,7 @@
 %define	module	Data-Compare
 %define	name	perl-%{module}
-%define	version	0.13
-%define	release	%mkrel 3
+%define	version	0.16
+%define	release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
