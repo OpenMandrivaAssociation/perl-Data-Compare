@@ -1,6 +1,6 @@
 %define	module	Data-Compare
 %define	name	perl-%{module}
-%define	version	0.16
+%define	version	0.17
 %define	release	%mkrel 1
 
 Name:		%{name}
@@ -8,40 +8,36 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL or Artistic
 Group:		Development/Perl
-Summary:	%{module} module for perl
-Source0:	ftp.perl.org:/pub/CPAN/modules/by-module/Data/%{module}-%{version}.tar.bz2
+Summary:	Compare perl data structures
 Url:		http://search.cpan.org/dist/%{module}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-%if %{mdkversion} < 1010
-Buildrequires: perl-devel
-%endif
+Source:     http://www.cpan.org/modules/by-module/Data/%{module}-%{version}.tar.gz
 Buildrequires:  perl-File-Find-Rule
-Requires:	perl >= 5.004
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
-%{module} module for perl
+Compare two perl data structures recursively. Returns 0 if the structures
+differ, else returns 1.
 
 %prep
 %setup -q -n %{module}-%{version}
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" %{__perl} Makefile.PL INSTALLDIRS=vendor
+%{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %{makeinstall_std}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %doc TODO README CHANGES
 %{perl_vendorlib}/Data
 %{_mandir}/*/*
-
