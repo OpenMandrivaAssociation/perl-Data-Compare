@@ -13,7 +13,6 @@ Url:		http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Data/%{module}-%{version}.tar.gz
 Buildrequires:  perl-File-Find-Rule
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Compare two perl data structures recursively. Returns 0 if the structures
