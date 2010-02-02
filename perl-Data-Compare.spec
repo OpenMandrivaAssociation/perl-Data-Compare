@@ -1,5 +1,5 @@
 %define	upstream_name	 Data-Compare
-%define	upstream_version 1.2101
+%define upstream_version 1.2102
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -27,7 +27,7 @@ differ, else returns 1.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %{buildroot}
