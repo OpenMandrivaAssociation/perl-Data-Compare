@@ -1,5 +1,5 @@
 %define	upstream_name	 Data-Compare
-%define upstream_version 1.2102
+%define upstream_version 1.22
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
