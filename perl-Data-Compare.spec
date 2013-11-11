@@ -1,15 +1,15 @@
 %define	upstream_name	 Data-Compare
-%define upstream_version 1.22
+%define upstream_version 1.23
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Compare perl data structures
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Data/Data-Compare-%{upstream_version}.tar.gz
 
 BuildRequires:  perl-devel
 BuildRequires:  perl(File::Find::Rule)
@@ -115,4 +115,5 @@ Import perl-Data-Compare
 
 * Wed Feb 11 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 0.02-5mdk
 - own dir
+
 
