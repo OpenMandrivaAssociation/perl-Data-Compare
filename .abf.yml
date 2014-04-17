@@ -1,4 +1,5 @@
 removed_sources:
   Data-Compare-1.22.tar.gz: 00079776bf7481a4c9a76163a269dbd4e40c2bea
-sources:
   Data-Compare-1.23.tar.gz: 3c035610e702532399e731afd23323613bb846b6
+sources:
+  Data-Compare-1.24.tar.gz: 58f1ac39bd731b980789fd827348ac76264f3c78
