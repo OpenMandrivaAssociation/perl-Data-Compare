@@ -9,6 +9,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Compare perl data structures
 
+
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
 
@@ -37,6 +38,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc TODO README 
 %{perl_vendorlib}/Data
 %{_mandir}/*/*
+
 
 
 
