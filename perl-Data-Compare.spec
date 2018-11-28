@@ -1,9 +1,9 @@
 %define	upstream_name	 Data-Compare
-%define upstream_version 1.24
+%define upstream_version 1.25
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -27,9 +27,6 @@ differ, else returns 1.
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 %make
-
-%check
-%make test
 
 %install
 %makeinstall_std
