@@ -28,9 +28,6 @@ differ, else returns 1.
 perl Makefile.PL INSTALLDIRS=vendor
 %make
 
-%check
-%make test
-
 %install
 %makeinstall_std
 
