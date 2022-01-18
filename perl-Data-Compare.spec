@@ -1,5 +1,5 @@
 %define	upstream_name	 Data-Compare
-%define upstream_version 1.25
+%define upstream_version 1.27
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -32,7 +32,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-%doc TODO README 
+%doc README 
 %{perl_vendorlib}/Data
 %{_mandir}/*/*
 
