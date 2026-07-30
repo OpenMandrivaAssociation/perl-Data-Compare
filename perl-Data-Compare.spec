@@ -11,7 +11,7 @@ Summary:	Compare perl data structures
 
 
 Url:		https://github.com/DrHyde/perl-modules-Data-Compare
-Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.29.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl-devel
