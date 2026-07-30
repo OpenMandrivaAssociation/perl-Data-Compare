@@ -2,8 +2,8 @@
 %define upstream_version 1.29
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.29
+Release:	2
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -23,7 +23,7 @@ Compare two perl data structures recursively. Returns 0 if the structures
 differ, else returns 1.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n Data-Compare-1.29
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
