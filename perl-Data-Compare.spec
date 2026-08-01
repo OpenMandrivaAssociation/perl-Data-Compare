@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	1.29
-Release:	2
+Release:	3
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -31,6 +31,9 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %install
 %makeinstall_std
+
+%check
+make test || :
 
 %files
 %doc README 
